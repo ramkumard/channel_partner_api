@@ -1,10 +1,10 @@
-Fetch reminders for user
+Fetch followups for user
 ========
 
 Route
 ------
 
-* `GET ​http://housingman.com/api/reminders?token=xresedr` fetch the user reminders.
+* `GET ​http://housingman.com/api/followups?token=xresedr` fetch the user followups.
 
 Headers
 -------
@@ -18,7 +18,7 @@ Example
 Request
 -------
 
-* `GET ​http://housingman.com/api/reminders?token=xresedr` fetch the user reminders.
+* `GET ​http://housingman.com/api/followups?token=xresedr` fetch the user followups.
 
 
 Body
@@ -33,16 +33,16 @@ Response
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }, {
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }],
     "meta": {
         "status": 200,
@@ -64,7 +64,7 @@ Create Reminder
 Route
 ------
 
-* `POST ​http://housingman.com/api/reminders?token=xresedr` fetch the user reminders.
+* `POST ​http://housingman.com/api/followups?token=xresedr` fetch the user followups.
 
 Headers
 -------
@@ -78,7 +78,7 @@ Example
 Request
 -------
 
-* `POST ​http://housingman.com/api/reminders?token=xresedr` create user reminders.
+* `POST ​http://housingman.com/api/followups?token=xresedr` create user followups.
 
 
 Body
@@ -87,9 +87,9 @@ Body
 {
     "name": "testing",
     "lead_id": "1",
-    "description": "hai",
-    "status": "open",
-    "date": "2/8/2016"
+    "comments": "hai",
+    "lead_status": "open",
+    "next_schedule_at": "2/8/2016"
 }
 ```
 Response
@@ -101,16 +101,16 @@ Response
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }, {
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }],
     "meta": {
         "status": 200,
@@ -127,12 +127,12 @@ Response
 }
 ```
 
-Update Reminder
+Upnext_schedule_at Reminder
 ==============
 Route
 ------
 
-* `PUT ​http://housingman.com/api/reminders/:id?token=xresedr` update the user reminders.
+* `PUT ​http://housingman.com/api/followups/:id?token=xresedr` upnext_schedule_at the user followups.
 
 Headers
 -------
@@ -146,7 +146,7 @@ Example
 Request
 -------
 
-* `PUT ​http://housingman.com/api/reminders/1?token=xresedr` update user reminders.
+* `PUT ​http://housingman.com/api/followups/1?token=xresedr` upnext_schedule_at user followups.
 
 
 Body
@@ -155,9 +155,9 @@ Body
 {
     "name": "testing",
     "lead_id": "1",
-    "description": "hai",
-    "status": "open",
-    "date": "2/8/2016"
+    "comments": "hai",
+    "lead_status": "open",
+    "next_schedule_at": "2/8/2016"
 }
 ```
 Response
@@ -169,16 +169,16 @@ Response
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }, {
         "name": "testing",
         "lead_id": 1,
         "user_id": 1,
-        "description": "hai",
-        "status": "open",
-        "date": "2016-08-02"
+        "comments": "hai",
+        "lead_status": "open",
+        "next_schedule_at": "2016-08-02"
     }],
     "meta": {
         "status": 200,
@@ -199,7 +199,7 @@ Delete Reminder
 Route
 ------
 
-* `PUT ​http://housingman.com/api/reminders/:id?token=xresedr` delete the user reminders.
+* `PUT ​http://housingman.com/api/followups/:id?token=xresedr` delete the user followups.
 
 Headers
 -------
@@ -213,7 +213,7 @@ Example
 Request
 -------
 
-* `DELETE ​http://housingman.com/api/reminders/1?token=xresedr` delete user reminders.
+* `DELETE ​http://housingman.com/api/followups/1?token=xresedr` delete user followups.
 
 
 ```

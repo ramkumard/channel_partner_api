@@ -238,3 +238,441 @@ Response
     }
 }
 ```
+
+
+Search Lead
+========
+
+Route
+------
+
+* `POST ​http://housingman.com/api/leads/search?token=xresedr` search the user leads.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `POST ​http://housingman.com/api/leads/search?token=xresedr` search the user leads.
+
+
+Body
+----
+```json
+{
+    "start_price": "100",
+    "end_price": "2000",
+    "bhks": "3.5BHK"
+}
+```
+
+Response
+--------
+
+```json
+{
+    "data": [{
+        "name": "Jp nagar",
+        "email": "ramac37@gmail.com",
+        "mobile": "6646865376",
+        "start_price": "100.0",
+        "end_price": "200000.0",
+        "bhk": "1BHK,3.5BHK",
+        "prop_type": null
+    }],
+    "meta": {
+        "status": 200,
+        "message": "",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 1,
+            "total": 1,
+            "per_page": 10
+        }
+    }
+}
+```
+
+Search Lead
+========
+
+Route
+------
+
+* `POST ​http://housingman.com/api/leads/search?token=xresedr` search the user leads.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `POST ​http://housingman.com/api/leads/search?token=xresedr` search the user leads.
+
+
+Body
+----
+```json
+{
+    "start_price": "100",
+    "end_price": "2000",
+    "bhks": "3.5BHK"
+}
+```
+
+Response
+--------
+
+```json
+{
+    "data": [{
+        "name": "Jp nagar",
+        "email": "ramac37@gmail.com",
+        "mobile": "6646865376",
+        "start_price": "100.0",
+        "end_price": "200000.0",
+        "bhk": "1BHK,3.5BHK",
+        "prop_type": null
+    }],
+    "meta": {
+        "status": 200,
+        "message": "",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 1,
+            "total": 1,
+            "per_page": 10
+        }
+    }
+}
+```
+
+Starred Lead
+========
+
+Route
+------
+
+* `GET ​http://housingman.com/api/leads/starred_leads?token=xresedr` starred user leads.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `GET ​http://housingman.com/api/leads/starred_leads?token=xresedr` starred user leads.
+
+
+Body
+----
+```json
+```
+
+Response
+--------
+
+```json
+{
+    "data": [{
+        "lead": {
+            "id": 44,
+            "name": "Prashanth ",
+            "email": "prashanth@housingman.com",
+            "mobile": "9786848278",
+            "project_id": 435,
+            "created_at": "2015-12-28T13:43:40.369+05:30",
+            "updated_at": "2015-12-28T13:43:40.369+05:30",
+            "enquiry_type": null,
+            "builder_id": null,
+            "source": null,
+            "user_id": null,
+            "start_price": null,
+            "end_price": null,
+            "locations": null,
+            "bhks": null,
+            "prop_types": null
+        },
+        "status": "2",
+        "starred": "true"
+    }],
+    "meta": {
+        "status": 200,
+        "message": "",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 1,
+            "total": 1,
+            "per_page": 10
+        }
+    }
+}
+```
+
+
+Star Lead
+========
+
+Route
+------
+
+* `POST ​http://housingman.com/api/leads/star_lead?token=xresedr` star user leads.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `POST ​http://housingman.com/api/leads/star_lead?token=xresedr` star user leads.
+
+
+Body
+----
+```json
+{
+    "starred" : true,
+    "id" : 1 
+}
+```
+
+Response
+--------
+
+```json
+{
+    "data": [],
+    "meta": {
+        "status": 200,
+        "message": "Starred",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 0,
+            "total": 0,
+            "per_page": 10
+        }
+    }
+}
+```
+
+Create Lead
+==============
+Route
+------
+
+* `POST ​http://housingman.com/api/leads?token=xresedr` create lead.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `POST ​http://housingman.com/api/leads?token=xresedr` create lead.
+
+
+Body
+----
+```json
+{
+    "lead": {
+        "mobile": "8951246163",
+        "email": "ram@gmail.com",
+        "name": "Ram",
+        "project_id": "1",
+        "builder_id": "2",
+        "source": "new",
+        "start_price": 100,
+        "end_price": 1000,
+        "bhk": "1BHK,2BHK",
+        "prop_type": "Flat",
+        "channel_partner_user_leads_attributes": {
+            "user_id": "3"
+        }
+    }
+}
+```
+Response
+--------
+
+```json
+{
+    "data": [{
+        "name": "Ram",
+        "email": "ram@gmail.com",
+        "mobile": "8951246163",
+        "start_price": "100.0",
+        "end_price": "1000.0",
+        "bhk": "1BHK,2BHK",
+        "prop_type": "Flat"
+    }],
+    "meta": {
+        "status": 200,
+        "message": "Created lead",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 1,
+            "total": 1,
+            "per_page": 10
+        }
+    }
+}
+```
+
+Lead update
+==============
+Route
+------
+
+* `PUT ​http://housingman.com/api/leads/:id?token=xresedr` update lead.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `PUT ​http://housingman.com/api/leads/1?token=xresedr` upnext_schedule_at user followups.
+
+
+Body
+----
+```json
+{
+    "lead": {
+        "mobile": "8951246163",
+        "email": "ram@gmail.com",
+        "name": "Jp",
+        "project_id": "1",
+        "builder_id": "2",
+        "source": "new",
+        "start_price": 100,
+        "end_price": 1000,
+        "bhk": "1BHK,2BHK",
+        "prop_type": "Flat",
+        "channel_partner_user_leads_attributes": {
+            "user_id": "3"
+        }
+    }
+}
+```
+Response
+--------
+
+```json
+{
+    "data": [{
+        "id": 47,
+        "name": "Jp",
+        "email": "ram@gmail.com",
+        "mobile": "8951246163",
+        "start_price": "100.0",
+        "end_price": "1000.0",
+        "bhk": "1BHK,2BHK",
+        "prop_type": "Flat"
+    }],
+    "meta": {
+        "status": 200,
+        "message": "Successfully updated",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 1,
+            "total": 1,
+            "per_page": 10
+        }
+    }
+}
+```
+
+Delete Lead
+==============
+Route
+------
+
+* `Delete ​http://housingman.com/api/leads/:id?token=xresedr` delete the user lead.
+
+Headers
+-------
+
+* `Accept: application/json`
+* `Content-Type: application/json`
+
+Example
+-------
+
+Request
+-------
+
+* `DELETE ​http://housingman.com/api/leads/1?token=xresedr` delete user lead.
+
+
+```
+Response
+--------
+
+```json
+{
+    "data": [],
+    "meta": {
+        "status": 200,
+        "message": "Deleted",
+        "page_info": {
+            "current_page": 1,
+            "prev_page": null,
+            "next_page": null,
+            "total_pages": 0,
+            "total": 0,
+            "per_page": 10
+        }
+    }
+}
+```
