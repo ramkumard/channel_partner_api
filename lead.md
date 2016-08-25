@@ -4,7 +4,7 @@ Active Lead
 Route
 ------
 
-* `POST ​http://housingman.com/api/leads` fetch the user leads.
+* `POST ​http://housingman.com/api/leads?token=xyz` fetch the user leads.
 
 Headers
 -------
@@ -18,7 +18,7 @@ Example
 Request
 -------
 
-* `POST ​http://housingman.com/api/leads` fetch the user leads.
+* `POST ​http://housingman.com/api/leads?token=xyz` fetch the user leads.
 
 
 Body
