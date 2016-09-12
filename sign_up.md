@@ -28,10 +28,12 @@ Body
 ```json
 {
     "user": {
-        "name": "Ram",
-        "mobile": "6646865376",
-        "email": "ramac37@gmail.com",
-        "channel_partner_user_localities_attributes": {
+        "name": "RamSampet",
+        "mobile": "7872365567",
+        "email": "ramac476@gmail.com",
+        "image":"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUF",
+    	"image_name":"pic7",
+    	"channel_partner_user_localities_attributes": {
             "0": {
                 "locality_id": "1"
             }
